@@ -1,3 +1,6 @@
+## 0.4.26
+- Fixing Compile Issue error
+
 ## 0.4.23
 
 - Update flutter_tesseract_ocr.podspec
