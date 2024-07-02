@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 
 import java.io.File;
 import java.util.Map.*;
+import java.util.Map;
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.BinaryMessenger;
@@ -95,15 +96,18 @@ public class FlutterTesseractOcrPlugin implements FlutterPlugin, MethodCallHandl
 
     @Override
     protected String doInBackground(Void... voids) {
-      baseApi.setImage(imageFile);
-      String recognizedText;
-      if (extractHocr) {
-        recognizedText = baseApi.getHOCRText(0);
-      } else {
-        recognizedText = baseApi.getUTF8Text();
-      }
-      baseApi.end();
-      return recognizedText;
+      
+        this.baseApi.setImage(imageFile);
+        String recognizedText;
+        if (extractHocr) {
+          recognizedText = this.baseApi.getHOCRText(0);
+        } else {
+          recognizedText = this.baseApi.getUTF8Text();
+        }
+        this.baseApi.stop();
+        return recognizedText;
+      
+
     }
 
     @Override
