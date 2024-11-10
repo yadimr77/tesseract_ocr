@@ -1,3 +1,6 @@
+## 0.4.27
+- move to flutter gradle's declarative plugins
+
 ## 0.4.26
 - Fixing Compile Issue error
 
