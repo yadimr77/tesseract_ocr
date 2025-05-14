@@ -3,17 +3,6 @@ group 'io.paratoner.flutter_tesseract_ocr'
 version '1.0'
 
 apply plugin: 'com.android.library'
-
-
-rootProject.allprojects {
-    repositories {
-        flatDir {
-           dirs project(':flutter_tesseract_ocr').file('libs')
-        }
-        
-    }
-}
-
 android {
     namespace "io.paratoner.flutter_tesseract_ocr"
     compileSdkVersion 33
