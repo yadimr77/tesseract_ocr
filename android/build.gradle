@@ -1,5 +1,8 @@
+
 group 'io.paratoner.flutter_tesseract_ocr'
 version '1.0'
+
+apply plugin: 'com.android.library'
 
 buildscript {
     repositories {
@@ -21,8 +24,6 @@ rootProject.allprojects {
         
     }
 }
-
-apply plugin: 'com.android.library'
 
 android {
     namespace "io.paratoner.flutter_tesseract_ocr"
