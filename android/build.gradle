@@ -48,6 +48,3 @@ android {
 //         dirs project(':flutter_tesseract_ocr').file('libs')
 //     }
 // }
-dependencies {
-    api(name: 'tesseract4android-release', ext: 'aar')
-}
