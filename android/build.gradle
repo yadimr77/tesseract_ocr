@@ -26,12 +26,12 @@ apply plugin: 'com.android.library'
 
 android {
     namespace "io.paratoner.flutter_tesseract_ocr"
-    compileSdkVersion 34
+    compileSdkVersion 33
     
      
     defaultConfig {
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 33
 
     }
     lintOptions {
