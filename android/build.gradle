@@ -4,17 +4,6 @@ version '1.0'
 
 apply plugin: 'com.android.library'
 
-buildscript {
-    repositories {
-        google()
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.2'
-    }
-
-}
 
 rootProject.allprojects {
     repositories {
